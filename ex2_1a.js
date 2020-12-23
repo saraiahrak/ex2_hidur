@@ -1,5 +1,9 @@
-let results = {'0': 1, '1': 1};
+// Dekel Yosef 315634071
+// Sarai Ahrak 204894000
 
+
+
+let results = {'0': 1, '1': 1};
 
 function f(n) {
     if (n in results) {

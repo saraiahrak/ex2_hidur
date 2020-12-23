@@ -1,3 +1,7 @@
+// Dekel Yosef 315634071
+// Sarai Ahrak 204894000
+
+
 // DOM manipulation
 console.log(document.getElementById("title"));
 // console.log(document instanceof HTMLDocument);
