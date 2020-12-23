@@ -1,8 +1,8 @@
-results = [1];
+let results = {'0': 1, '1': 1};
 
 
 function f(n) {
-    if (results.length > n) {
+    if (n in results) {
         return results[n]
     } else {
         results[n] = n * f(n - 1);

@@ -8,22 +8,20 @@ function memoize(f) {
 }
 
 
-let factorial = (function () {
+let fibbonacci = (function () {
     function f(n) {
         if (n === 1 || n === 0) {
-            return 1;
+            return n;
         } else {
-            return n * memFact(n - 1);
+            return memFib(n - 1) + memFib(n - 2);
         }
     }
 
-    const memFact = memoize(f);
+    const memFib = memoize(f);
 
     return f;
 })();
 
 
-//
-// console.log(factorial(8));
-// console.log(factorial(10));
-
+// console.log(fibbonacci(60));
+// console.log(fibbonacci(80));
